@@ -5,3 +5,6 @@ describe('smoke tests to ensure jest is working', () => {
       expect(8 + 2).toBe(10);
     });
 });
+
+
+export {}
