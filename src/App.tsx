@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+  const [resultMessage, setResultMessage] = useState("");
+  const [sqrRootMessage, setSqrRootMessage] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='app'>
+
+      <div className='form-container'>
+      <h1 className='text-align' data-testid="heading">Square number checker</h1>
+      <h2 className='text-align' data-testid="sub-heading">{`${resultMessage}`}</h2>
+      <h4 className='text-align' data-testid="description">{`${sqrRootMessage}`}</h4>
+      </div>
+      </div>
+    </>
   );
 }
 
