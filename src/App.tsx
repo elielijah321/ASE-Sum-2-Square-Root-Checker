@@ -1,18 +1,20 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 function App() {
 
   const [input, setInput] = useState("");
   const [resultMessage, setResultMessage] = useState("");
   const [sqrRootMessage, setSqrRootMessage] = useState("");
+  const [isDisabled, setIsDisabled] = useState(true);
 
   const  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInput("");
     setResultMessage("");
     setSqrRootMessage("");
+    setIsDisabled(true);
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -44,7 +46,14 @@ function App() {
               Enter a number to check if it is a square number
             </Form.Text>
           </Form.Group>
-
+          <Button 
+            variant="primary" 
+            className='submit' 
+            type="submit" 
+            data-testid="submit-button"
+            disabled={isDisabled}>
+            Submit
+          </Button>
         </Form>
       </div>
       </div>

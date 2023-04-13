@@ -43,4 +43,10 @@ it('should render default app components', () => {
   expect(submitElement).toHaveTextContent('Submit');
 });
 
+it('should disable submit button when the input field is empty', () => {
+  // Assert
+  expect(inputElement).toBeEmptyDOMElement();
+  expect(submitElement).toBeDisabled(); 
+});
+
 });
