@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  const [resultMessage, setResultMessage] = useState("");
-  const [sqrRootMessage, setSqrRootMessage] = useState("");
+  
 
   return (
     <>
@@ -13,8 +12,8 @@ function App() {
 
       <div className='form-container'>
       <h1 className='text-align' data-testid="heading">Square number checker</h1>
-      <h2 className='text-align' data-testid="sub-heading">{`${resultMessage}`}</h2>
-      <h4 className='text-align' data-testid="description">{`${sqrRootMessage}`}</h4>
+      <h2 className='text-align' data-testid="sub-heading">{`{resultMessage}`}</h2>
+      <h4 className='text-align' data-testid="description">{`{sqrRootMessage}`}</h4>
       </div>
       </div>
     </>
