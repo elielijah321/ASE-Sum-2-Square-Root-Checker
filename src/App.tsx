@@ -11,10 +11,12 @@ function App() {
   const [isDisabled, setIsDisabled] = useState(true);
 
   const  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInput("");
-    setResultMessage("");
-    setSqrRootMessage("");
-    setIsDisabled(true);
+    let value = event.target.value;
+
+    value = value.replace(/\D/, '');
+    value.length > 0 ? setIsDisabled(false) : setIsDisabled(true);
+
+    setInput(value);
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
