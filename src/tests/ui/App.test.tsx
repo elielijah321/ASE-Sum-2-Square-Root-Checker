@@ -6,7 +6,9 @@ describe('App', () => {
   let formElement: HTMLElement,
       headingElement: HTMLElement,
       subHeadingElement: HTMLElement,
-      descriptionElement: HTMLElement;
+      descriptionElement: HTMLElement,
+      inputElement: HTMLElement,
+      hintElement: HTMLElement;
 
 beforeEach(() => {
   render(<App />);
@@ -15,6 +17,8 @@ beforeEach(() => {
   headingElement = screen.getByTestId('heading'); 
   subHeadingElement = screen.getByTestId('sub-heading'); 
   descriptionElement = screen.getByTestId('description'); 
+  inputElement = screen.getByTestId('input'); 
+  hintElement = screen.getByTestId('hint-text'); 
  
 });
 
@@ -25,10 +29,15 @@ it('should render default app components', () => {
   expect(headingElement).toBeInTheDocument();
   expect(subHeadingElement).toBeInTheDocument();
   expect(descriptionElement).toBeInTheDocument();
+  expect(inputElement).toBeInTheDocument();
+  expect(hintElement).toBeInTheDocument();
   
   expect(headingElement).toHaveTextContent('Square number checker');
   expect(subHeadingElement).toBeEmptyDOMElement();
   expect(descriptionElement).toBeEmptyDOMElement();
+  expect(inputElement).toBeEmptyDOMElement();
+  expect(hintElement).toHaveTextContent('Enter a number to check if it is a square number');
+  
 });
 
 });
