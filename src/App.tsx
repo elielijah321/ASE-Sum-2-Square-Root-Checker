@@ -10,7 +10,9 @@ function App() {
   const [sqrRootMessage, setSqrRootMessage] = useState("");
 
   const  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-
+    setInput("");
+    setResultMessage("");
+    setSqrRootMessage("");
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
