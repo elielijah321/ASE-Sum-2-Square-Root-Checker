@@ -41,7 +41,6 @@ it('should render default app components', () => {
   expect(inputElement).toBeEmptyDOMElement();
   expect(hintElement).toHaveTextContent('Enter a number to check if it is a square number');
   expect(submitElement).toHaveTextContent('Submit');
-
 });
 
 });
