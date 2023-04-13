@@ -2,6 +2,7 @@ import React, { ChangeEvent, FormEvent, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form } from 'react-bootstrap';
+import { calculateSquareRoot, isSquareNumber } from './functions/squareNumberHelper';
 
 function App() {
 
@@ -20,7 +21,24 @@ function App() {
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
+    setResultMessage("");
+    setSqrRootMessage("");
+
+    const parsedInput = parseInt(input);
+
+    // Check if the input is a square number
+    const result = isSquareNumber(parsedInput);
+    const resultMessage = result ? `${input} is a square number` : `${input} is not a square number`;
+
+    setResultMessage(resultMessage);
+
+    
+    if (result) {
+      const sqrNumber = calculateSquareRoot(parsedInput);
+      setSqrRootMessage(`The square root is: ${sqrNumber}`);
+    }
 
   }
   
