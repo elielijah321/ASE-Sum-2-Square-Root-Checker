@@ -1,5 +1,14 @@
 name: Azure Static Web Apps CI/CD - Prod
 
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - develop
+
 jobs:
   build_job:
     runs-on: ubuntu-latest
