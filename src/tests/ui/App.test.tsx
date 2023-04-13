@@ -62,4 +62,37 @@ it('should only accept numerical values in the input field', () => {
   expect(inputElement).toBeEmptyDOMElement();  
 });
 
+it('should display correct message when input is not a square number', () => {
+
+  // Arrange
+  const inputValue = '123';
+  const mockedEvent = { target: { value: inputValue } };
+  const expectedSubHeading = '123 is not a square number';
+
+  // Act
+  fireEvent.change(inputElement, mockedEvent);
+  fireEvent.click(submitElement);
+
+  // Assert
+  expect(subHeadingElement).toHaveTextContent(expectedSubHeading);
+  expect(descriptionElement).toBeEmptyDOMElement(); 
+});
+
+it('should display correct message when input is a square number', () => {
+
+  // Arrange
+  const inputValue = '16';
+  const mockedEvent = { target: { value: inputValue } };
+  const expectedSubHeading = '16 is a square number';
+  const expectedDescription = 'The square root is: 4';
+
+  // Act
+  fireEvent.change(inputElement, mockedEvent);
+  fireEvent.click(submitElement);
+
+  // Assert
+  expect(subHeadingElement).toHaveTextContent(expectedSubHeading);
+  expect(descriptionElement).toHaveTextContent(expectedDescription); 
+});
+
 });
