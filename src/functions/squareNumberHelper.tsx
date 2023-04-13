@@ -1,9 +1,15 @@
 export const calculateSquareRoot = (num: number): number  => {
+    
+    // Calculate the square root of the input number
+    const sqrt = Math.sqrt(num);
 
-    return 0;
+    return sqrt;
 }
 
 export const isSquareNumber = (num: number): boolean  => {
     
-    return false;
+    const sqrt = calculateSquareRoot(num);
+
+    // Check if the square root is an integer by comparing it to the floor of itself
+    return sqrt === Math.floor(sqrt);
 }
