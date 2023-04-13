@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import App from '../../App';
 
 describe('App', () => {
@@ -47,6 +47,19 @@ it('should disable submit button when the input field is empty', () => {
   // Assert
   expect(inputElement).toBeEmptyDOMElement();
   expect(submitElement).toBeDisabled(); 
+});
+
+it('should only accept numerical values in the input field', () => {
+
+  // Arrange
+  const inputValue = 'abc';
+  const mockedEvent = { target: { value: inputValue } };
+
+  // Act
+  fireEvent.change(inputElement, mockedEvent);
+
+  // Assert
+  expect(inputElement).toBeEmptyDOMElement();  
 });
 
 });
