@@ -1,19 +1,49 @@
-import React from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Form } from 'react-bootstrap';
 
 function App() {
 
+  const [input, setInput] = useState("");
+  const [resultMessage, setResultMessage] = useState("");
+  const [sqrRootMessage, setSqrRootMessage] = useState("");
+
+  const  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+
+  }
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+
+
+  }
   
 
   return (
     <>
       <div className='app'>
 
-      <div className='form-container'>
-      <h1 className='text-align' data-testid="heading">Square number checker</h1>
-      <h2 className='text-align' data-testid="sub-heading">{`{resultMessage}`}</h2>
-      <h4 className='text-align' data-testid="description">{`{sqrRootMessage}`}</h4>
+        <div className='form-container'>
+        <h1 className='text-align' data-testid="heading">Square number checker</h1>
+        <h2 className='text-align' data-testid="sub-heading">{`${resultMessage}`}</h2>
+        <h4 className='text-align' data-testid="description">{`${sqrRootMessage}`}</h4>
+
+        <Form data-testid="form" onSubmit={event => handleSubmit(event)}>
+          <Form.Group className="mb-3" controlId="formNumber" >
+            <Form.Control 
+              data-testid="input"
+              type="text" 
+              placeholder="Enter a number" 
+              value={input}
+              onChange={handleChange}
+              required
+              />
+            <Form.Text className="text-muted" data-testid="hint-text">
+              Enter a number to check if it is a square number
+            </Form.Text>
+          </Form.Group>
+
+        </Form>
       </div>
       </div>
     </>
