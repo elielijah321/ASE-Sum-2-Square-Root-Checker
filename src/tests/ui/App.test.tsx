@@ -8,7 +8,8 @@ describe('App', () => {
       subHeadingElement: HTMLElement,
       descriptionElement: HTMLElement,
       inputElement: HTMLElement,
-      hintElement: HTMLElement;
+      hintElement: HTMLElement,
+      submitElement: HTMLElement;
 
 beforeEach(() => {
   render(<App />);
@@ -18,7 +19,8 @@ beforeEach(() => {
   subHeadingElement = screen.getByTestId('sub-heading'); 
   descriptionElement = screen.getByTestId('description'); 
   inputElement = screen.getByTestId('input'); 
-  hintElement = screen.getByTestId('hint-text'); 
+  hintElement = screen.getByTestId('hint-text');  
+  submitElement = screen.getByTestId('submit-button'); 
  
 });
 
@@ -31,13 +33,15 @@ it('should render default app components', () => {
   expect(descriptionElement).toBeInTheDocument();
   expect(inputElement).toBeInTheDocument();
   expect(hintElement).toBeInTheDocument();
+  expect(submitElement).toBeInTheDocument();
   
   expect(headingElement).toHaveTextContent('Square number checker');
   expect(subHeadingElement).toBeEmptyDOMElement();
   expect(descriptionElement).toBeEmptyDOMElement();
   expect(inputElement).toBeEmptyDOMElement();
   expect(hintElement).toHaveTextContent('Enter a number to check if it is a square number');
-  
+  expect(submitElement).toHaveTextContent('Submit');
+
 });
 
 });
