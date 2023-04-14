@@ -32,3 +32,9 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+.submit {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+  width: 100%;
+}
