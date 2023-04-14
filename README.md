@@ -5,6 +5,8 @@ For Northeastern University
 
 ## Square number checker app 
 
+[![codecov](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker/branch/main/graph/badge.svg?token=FkUOknCveH)](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker)
+
 
 
 ### About
