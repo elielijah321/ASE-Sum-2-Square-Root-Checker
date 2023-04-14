@@ -10,7 +10,7 @@ on:
       - develop
 
 jobs:
-  build_job:
+  build_and_test_job:
     runs-on: ubuntu-latest
     name: Build and Test Job
     steps:
@@ -27,7 +27,7 @@ jobs:
   deploy_job:
     runs-on: ubuntu-latest
     name: Deploy Job
-    needs: build_job
+    needs: build_and_test_job
     steps:
       - uses: actions/checkout@v2
         with:
@@ -42,6 +42,19 @@ jobs:
           api_location: ""
           output_location: "build"
   
+  cypress_test_job:
+    runs-on: ubuntu-latest
+    name: Cypress Test Job
+    needs: deploy_job
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Test
+        run: | 
+            npm install
+            npm run cy:run -- --env url="${{ secrets.DEV_URL }}"
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
