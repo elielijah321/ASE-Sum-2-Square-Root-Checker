@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Software Engineering Summative 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For Northeastern University
 
-## Available Scripts
 
-In the project directory, you can run:
+## Square number checker app 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### About
 
-### `npm test`
+Author: Elijah Aremu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GitHub Username: @elielijah321
 
-### `npm run build`
+![APP SCREENSHOT](https://user-images.githubusercontent.com/45821029/232090390-4c833dfd-f85e-426e-99d7-a98875544739.jpeg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Square number checker app is a web application built with React and Bootstrap that allows users to input a number and determine if it is a perfect square. The app provides two main functionalities; it checks if the entered number is a square number and calculates the square root of that number. The app has a simple and user-friendly interface that includes an input field for the number to be checked, a submit button to initiate the check and a message section that displays the results of the check.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Reason for creating the app**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Square number checker app was created as a prototype for the organization I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organization's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organization wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
