@@ -53,7 +53,7 @@ jobs:
       - name: Test
         run: | 
             npm install
-            npm run cy:run -- --env url="https://happy-ground-09b048e03.3.azurestaticapps.net"
+            npm run cy:run -- --env url="${{ secrets.DEV_URL }}"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
