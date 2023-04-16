@@ -27,3 +27,16 @@ The Square number checker app is a web application built with React and Bootstra
 The Square number checker app was created as a prototype for the organization I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organization's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organization wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
 
 The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
+
+
+**Performance and Accessibility Testing**
+
+![LIGHT HOUSE](https://user-images.githubusercontent.com/45821029/232130330-2a34047f-211b-4de0-945d-64b6a72451e4.jpeg)
+
+
+I evaluated and improved my webpage's quality using the Google Lighthouse tool, which is free and accessible through the development console for Chromium-based browsers. This tool generates a report that summarizes various quality metrics, including performance, accessibility, best practices, and SEO.
+
+The performance metric evaluated loading speed, time for loading basic frames, and displaying meaningful content. Accessibility evaluated the website's accessibility for users with disabilities through audio captions, button names, and 'aria-' attributes. Best practices evaluated many practices deemed 'best,' such as using HTTPS and avoiding deprecated code. SEO analyzed features such as meta descriptions, titles, and font sizes.
+
+The website scored highly in all four metrics, with a performance rating of 100, an accessibility rating of 96, a best practices rating of 100, and an SEO rating of 100. This means the website is highly optimized, easy to navigate, and attracts high-quality internet traffic naturally without the need for advertising.
+
