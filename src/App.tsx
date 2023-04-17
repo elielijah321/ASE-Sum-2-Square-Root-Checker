@@ -36,6 +36,7 @@ function App() {
 
     
     if (result) {
+      // if result is true, calculate the square root
       const sqrNumber = calculateSquareRoot(parsedInput);
       setSqrRootMessage(`The square root is: ${sqrNumber}`);
     }

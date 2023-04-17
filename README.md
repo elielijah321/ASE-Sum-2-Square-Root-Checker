@@ -2,11 +2,9 @@
 
 For Northeastern University
 
-
 ## Square number checker app 
 
 [![codecov](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker/branch/main/graph/badge.svg?token=FkUOknCveH)](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker)
-
 
 
 ### About
@@ -19,7 +17,6 @@ GitHub Username: @elielijah321
 
 
 The Square number checker app is a web application built with React and Bootstrap that allows users to input a number and determine if it is a perfect square. The app provides two main functionalities; it checks if the entered number is a square number and calculates the square root of that number. The app has a simple and user-friendly interface that includes an input field for the number to be checked, a submit button to initiate the check and a message section that displays the results of the check.
-
 
 
 **Reason for creating the app**
@@ -40,3 +37,38 @@ The performance metric evaluated loading speed, time for loading basic frames, a
 
 The website scored highly in all four metrics, with a performance rating of 100, an accessibility rating of 96, a best practices rating of 100, and an SEO rating of 100. This means the website is highly optimized, easy to navigate, and attracts high-quality internet traffic naturally without the need for advertising.
 
+# Code and Design
+
+## Technical Documentation
+
+### Technical Stack
+* [HMTL](https://devdocs.io/html/)
+* [CSS](https://devdocs.io/css/)
+* [TypeScript](https://devdocs.io/typescript/)
+* [jest](https://jestjs.io/docs/getting-started)
+
+### Files used to run the app
+
+* App.tsx
+* index.html
+* index.css
+* launch.json
+
+### Files used in testing
+
+* squareNumberHelper.test.tsx
+* App.test.tsx
+* app.cy.ts
+* package.json
+
+### User End Links
+
+* Repo name: ASE-Sum-2-Square-Root-Checker
+* Repo link: https://github.com/elielijah321/ASE-Sum-2-Square-Root-Checker
+
+
+## Coding Practice
+
+I have made sure that the code is easy to read and comprehend by following the correct naming and coding conventions. I used camelCase and code indentation throughout the codebase to achieve this. Comments were used to allow other who have not worked on the project to understand what is being done.
+
+<img width="787" alt="image" src="https://user-images.githubusercontent.com/45821029/232326279-81ec0d85-d115-463c-bcee-e79aa4df72e0.png">
