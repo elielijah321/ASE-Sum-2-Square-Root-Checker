@@ -113,12 +113,30 @@ Visit [cypress documentation](https://docs.cypress.io/guides/end-to-end-testing/
 * Repo link: https://github.com/elielijah321/ASE-Sum-2-Square-Root-Checker
 
 
-# Coding Practice
+## Coding Practice
 
 I have made sure that the code is easy to read and comprehend by following the correct naming and coding conventions. I used camelCase and code indentation throughout the codebase to achieve this. Comments were used to allow other who have not worked on the project to understand what is being done.
 
 ![F1A9B9AE-A631-4C7B-92DE-BCBB1F00E71A](https://user-images.githubusercontent.com/45821029/232496332-90aae2d6-fa67-4e07-a947-dd92222722fb.jpeg)
 
+# Figma designs
+
+Figma is a collaborative design tool that allows designers to create user interface designs and interactive prototypes. Figma can be a valuable tool for visualizing the overall look and feel of the app as well as the specific functionality and user interactions.
+
+By creating both a desktop and mobile prototype in Figma I was able to better understand how the app should look and feel on different devices and could identify any potential design issues or usability challenges early in the development process. 
+
+### Prototype 1
+![Prototype 1](https://user-images.githubusercontent.com/45821029/232894163-81ceed6e-ad8d-48b2-bded-14823ffdbf5d.jpeg)
+
+### Prototype 2
+![Prototype 2](https://user-images.githubusercontent.com/45821029/232896279-6ec8b242-89c0-4759-8e9e-e3ab7b597398.jpeg)
+
+### Prototype 3
+![Prototype 3](https://user-images.githubusercontent.com/45821029/232896374-51486d93-b2a1-43cb-a0d1-97b43f67f6d7.jpeg)
+
+I created three prototypes of my project's user interface in Figma and tested them with end-users. I used Google Forms to create a survey that was circulated to potential users. I presented all designs to users and included questions asking them which design they prefer while ensuring that the questions do not introduce any biases. Based on user feedback I selected the design that received the most votes as the user interface for my project. 
+
+[Prototype Form](https://forms.gle/ju5TE9xqYKfeSC6e6)
 
 # Project Management
 
