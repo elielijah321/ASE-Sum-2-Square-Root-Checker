@@ -16,12 +16,75 @@ GitHub Username: @elielijah321
 
 The Square number checker app is a web application built with React and Bootstrap that allows users to input a number and determine if it is a perfect square. The app provides two main functionalities; it checks if the entered number is a square number and calculates the square root of that number. The app has a simple and user-friendly interface that includes an input field for the number to be checked, a submit button to initiate the check and a message section that displays the results of the check.
 
-
 ##  Reason for creating the app
 
 The Square number checker app was created as a prototype for the organization I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organization's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organization wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
 
 The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
+
+# User Documentation
+
+To run the files for this project npm is necessary, therefore make sure that it has been installed.
+
+### 1. Ensure node and npm are installed by running the following commands in your terminal:
+
+```sh
+node -v
+```
+```sh
+npm -v
+```
+If they are not installed, follow the steps on [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+### 2. Clone the repo:
+
+```sh
+git clone https://github.com/elielijah321/ASE-Sum-2-Square-Root-Checker.git
+```
+
+### 3. Install dependencies
+
+```sh
+npm install
+```
+
+### 4. Launch the project
+```sh
+npm start
+```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### 5. Run logic and UI test:
+
+```sh
+npm test
+```
+```sh
+a
+```
+
+Press the 'a' button to runs all tests (excluding End-to-End tests).
+
+Visit [create-react-app/docs/running-tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information on running tests.
+
+### 6. Cypress tests:
+
+Ensure that the app is running (See step 4)
+
+```sh
+npm run cy:open
+```
+or
+```sh
+npm run cy:run
+```
+
+
+
+Visit [cypress documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test) for more information on running cypress tests.
+
+
 
 # Code and Design
 
