@@ -138,6 +138,22 @@ I created three prototypes of my project's user interface in Figma and tested th
 
 [Prototype Form](https://forms.gle/ju5TE9xqYKfeSC6e6)
 
+
+## Building the MVP
+
+How the MVP was produced
+1. I started by creating the CI/CD pipelines
+
+2. I then wrote failing UI tests to check for the presence of the elements that will be on the page
+
+3. Next was to create and style the page to include elements such as the background, form, input and submit button 
+
+4. I then wrote unit test to for the method that would confirm whether the input is or is not a square number 
+
+5. I then wrote the function that would confirm whether the input is or is not a square number 
+
+6. Lastly, i wrote the end to end test
+
 # Project Management
 
 This project was managed using Github's project tracker. GitHub's project tracker is a tool that allows users to manage and track the progress of projects within their GitHub repositories. It provides a visual interface for organising tasks, issues and pull requests into boards and columns similar to kanban boards.
