@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from '../../App';
+import ReactDOM from 'react-dom';
 
 describe('App', () => {
   let formElement: HTMLElement,
@@ -22,6 +23,10 @@ beforeEach(() => {
   hintElement = screen.getByTestId('hint-text');  
   submitElement = screen.getByTestId('submit-button'); 
  
+});
+
+it('renders app component', () => {
+  render(<App />);
 });
 
 it('should render default app components', () => {

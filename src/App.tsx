@@ -14,15 +14,20 @@ function App() {
   const  handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     let value = event.target.value;
 
+    // Only allow numerical values to be entered
     value = value.replace(/\D/, '');
+
+    //if the parsed input value is more than one enable the submit button
     value.length > 0 ? setIsDisabled(false) : setIsDisabled(true);
 
+    // set the input value 
     setInput(value);
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    // Reset values from previous submission
     setResultMessage("");
     setSqrRootMessage("");
 
@@ -30,12 +35,15 @@ function App() {
 
     // Check if the input is a square number
     const result = isSquareNumber(parsedInput);
+
+    // construct the result messge based on the square number result
     const resultMessage = result ? `${input} is a square number` : `${input} is not a square number`;
 
+    // set the result message
     setResultMessage(resultMessage);
 
-    
     if (result) {
+      // if result is true, calculate the square root
       const sqrNumber = calculateSquareRoot(parsedInput);
       setSqrRootMessage(`The square root is: ${sqrNumber}`);
     }
