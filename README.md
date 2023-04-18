@@ -130,6 +130,21 @@ Labels were attached to stories to categorise and organise them based on differe
 
 ![Project Kanban Board](https://user-images.githubusercontent.com/45821029/232847497-86161f5d-c675-4d91-81fa-7a08e002dc99.jpeg)
 
+## User stories
+
+User stories were created with a detailed description and a set of acceptance criteria that defined the specific requirements and functionality to be implemented.
+
+![User story](https://user-images.githubusercontent.com/45821029/232890190-3ef82f43-a582-45cf-bbb6-4f113649ce8d.jpeg)
+
+## Gitflow
+Gitflow is a branching model and workflow for version control using Git designed to help teams manage the development, testing, and release of software products.
+
+Gitflow defines a clear set of branching rules and conventions that dictate how code changes should be managed within a Git repository. It uses two main branches: a "main" branch, which represents the latest stable version of the software and a "develop" branch which represents the ongoing development of new features and bug fixes.
+
+Gitflow also defines a set of supporting branches, including feature branches for developing new features, release branches for preparing software releases and hotfix branches for addressing critical bugs or issues in production environments.
+
+To ensure clarity on which branch corresponded to which ticket, I made a point of incorporating the ID of the user story in the branch name.
+
 
 # Testing
 
