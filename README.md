@@ -1,4 +1,4 @@
-# Square number checker app Advanced - Software Engineering Summative 2
+# Square number checker app - Advanced Software Engineering Summative 2
 
 For Northeastern University
 
@@ -18,7 +18,7 @@ The Square number checker app is a web application built with React and Bootstra
 
 ##  Reason for creating the app
 
-The Square number checker app was created as a prototype for the organization I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organization's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organization wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
+The Square number checker app was created as a prototype for the organisation I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organisation's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organisation wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
 
 The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
 
@@ -80,11 +80,7 @@ or
 npm run cy:run
 ```
 
-
-
 Visit [cypress documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test) for more information on running cypress tests.
-
-
 
 # Code and Design
 
@@ -126,9 +122,9 @@ I have made sure that the code is easy to read and comprehend by following the c
 
 # Project Management
 
-This project was managed using Github's project tracker. GitHub's project tracker is a tool that allows users to manage and track the progress of projects within their GitHub repositories. It provides a visual interface for organizing tasks, issues and pull requests into boards and columns similar to kanban boards.
+This project was managed using Github's project tracker. GitHub's project tracker is a tool that allows users to manage and track the progress of projects within their GitHub repositories. It provides a visual interface for organising tasks, issues and pull requests into boards and columns similar to kanban boards.
 
-For this project I used the kanban methodology which allowed me to visualize the workflow, limit work in progress, and track the progress of tasks more effectively. This helped me to identify and address bottlenecks in the process and deliver value to customers more efficiently.
+For this project I used the kanban methodology which allowed me to visualise the workflow, limit work in progress, and track the progress of tasks more effectively. This helped me to identify and address bottlenecks in the process and deliver value to customers more efficiently.
 
 Labels were attached to stories to categorise and organise them based on different criteria such as documentation, testing, status, and bug. By using labels it becomes easier to filter and search for stories that share similar characteristics or are related to specific areas of the project.
 
@@ -164,14 +160,13 @@ Cypress is a JavaScript end-to-end testing framework that is specifically design
 
 ## Performance and Accessibility Testing
 
-I evaluated and improved my webpage's quality using the Google Lighthouse tool, which is free and accessible through the development console for Chromium-based browsers. This tool generates a report that summarizes various quality metrics, including performance, accessibility, best practices, and SEO.
+I evaluated and improved my webpage's quality using the Google Lighthouse tool, which is free and accessible through the development console for Chromium-based browsers. This tool generates a report that summarises various quality metrics, including performance, accessibility, best practices, and SEO.
 
-The performance metric evaluated loading speed, time for loading basic frames, and displaying meaningful content. Accessibility evaluated the website's accessibility for users with disabilities through audio captions, button names, and 'aria-' attributes. Best practices evaluated many practices deemed 'best,' such as using HTTPS and avoiding deprecated code. SEO analyzed features such as meta descriptions, titles, and font sizes.
+The performance metric evaluated loading speed, time for loading basic frames, and displaying meaningful content. Accessibility evaluated the website's accessibility for users with disabilities through audio captions, button names, and 'aria-' attributes. Best practices evaluated many practices deemed 'best,' such as using HTTPS and avoiding deprecated code. SEO analysed features such as meta descriptions, titles, and font sizes.
 
-The website scored highly in all four metrics, with a performance rating of 100, an accessibility rating of 96, a best practices rating of 100, and an SEO rating of 100. This means the website is highly optimized, easy to navigate, and attracts high-quality internet traffic naturally without the need for advertising.
+The website scored highly in all four metrics, with a performance rating of 100, an accessibility rating of 96, a best practices rating of 100, and an SEO rating of 100. This means the website is highly optimised, easy to navigate, and attracts high-quality internet traffic naturally without the need for advertising.
 
 ![LIGHT HOUSE](https://user-images.githubusercontent.com/45821029/232130330-2a34047f-211b-4de0-945d-64b6a72451e4.jpeg)
-
 
 
 ## Continuous Integration Testing
@@ -180,6 +175,24 @@ When I make changes to the code and push them to the repository on GitHub, the p
 If all the tests pass, I know that the changes I've made are ready for review and can be merged into the codebase by a team member. However, if a test fails, it means that one of my changes caused an issue and needs to be fixed before the code can be merged.
 
 By using Continuous Integration tests we can ensure that changes to the codebase are thoroughly checked for errors. This helps to maintain the accuracy and reliability of the codebase, and prevents errors from causing problems down the line.
+
+
+# Deployment process
+
+During the development of the app, I implemented continuous integration and continuous deployment pipeline which build, test and deploy the code when a pull request is opened on the repository
+
+* [Live Version](https://zealous-river-0a1c30e03.2.azurestaticapps.net/)
+* [Develop Version](https://happy-ground-09b048e03.3.azurestaticapps.net/)
+
+**Continuous Integration (CI)** is the practice of regularly integrating code changes from multiple developers into a central repository. This is typically achieved through automated build and testing processes that run every time code changes are made. The goal of CI is to detect errors and conflicts early in the development process, before they can cause problems downstream.
+
+**Continuous Delivery (CD)** is the practice of automating the process of deploying software applications to production environments. This is typically achieved through a series of automated tests and deployment pipelines that ensure that each new version of the software is properly tested and validated before being released to users. The goal of CD is to deliver high-quality software quickly and reliably, while minimising the risk of errors or downtime.
+
+### CI/CD pipeline yaml file
+![CI/CD Pipeline](https://user-images.githubusercontent.com/45821029/232880309-cea1238b-2240-4246-bb11-11283d98111f.jpeg)
+
+### Visulisation of the pipeline
+![Visualisation of the pipeline](https://user-images.githubusercontent.com/45821029/232879023-6b821b6e-821c-40ef-a5fe-c2b64356ba05.jpeg)
 
 
 # License
