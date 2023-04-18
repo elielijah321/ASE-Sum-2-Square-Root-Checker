@@ -109,4 +109,6 @@ If all the tests pass, I know that the changes I've made are ready for review an
 By using Continuous Integration tests we can ensure that changes to the codebase are thoroughly checked for errors. This helps to maintain the accuracy and reliability of the codebase, and prevents errors from causing problems down the line.
 
 
+# License
 
+This project is licensed under the MIT License - see the [LICENCE](https://devdocs.io/cypress/) file for details.
