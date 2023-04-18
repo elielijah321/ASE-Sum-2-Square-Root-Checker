@@ -111,4 +111,4 @@ By using Continuous Integration tests we can ensure that changes to the codebase
 
 # License
 
-This project is licensed under the MIT License - see the [LICENCE](https://devdocs.io/cypress/) file for details.
+This project is licensed under the MIT License - see the [LICENCE](https://github.com/elielijah321/ASE-Sum-2-Square-Root-Checker/blob/main/LICENSE) file for details.
