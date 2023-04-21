@@ -255,7 +255,7 @@ By using Continuous Integration tests we can ensure that changes to the codebase
 
 # Deployment process
 
-During the development of the app, I implemented continuous integration and continuous deployment pipeline which will build, test and deploy the code to Azure when a pull request is opened on the repository
+During the development of the app I implemented continuous integration and continuous deployment pipeline using Github Actions which will build, test and deploy the code to Azure when a pull request is opened on the repository. For more information GitHub Actions [click here](https://docs.github.com/en/actions).
 
 * [Live Version](https://zealous-river-0a1c30e03.2.azurestaticapps.net/)
 * [Develop Version](https://happy-ground-09b048e03.3.azurestaticapps.net/)
@@ -269,6 +269,11 @@ During the development of the app, I implemented continuous integration and cont
 
 ### Visulisation of the pipeline
 ![Visualisation of the pipeline](https://user-images.githubusercontent.com/45821029/232879023-6b821b6e-821c-40ef-a5fe-c2b64356ba05.jpeg)
+
+
+# Futute iterations
+
+In upcoming iterations of the app a feature will be implemented that enables the identification of non square numbers and calculates the closest square number to the input value. This functionality will allow users to seamlessly obtain the closest square number to a given input enhancing the overall user experience of the application.
 
 
 # License
