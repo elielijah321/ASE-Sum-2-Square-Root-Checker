@@ -2,8 +2,6 @@
 
 For Northeastern University
 
-[![codecov](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker/branch/main/graph/badge.svg?token=FkUOknCveH)](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker)
-
 #  Reason for creating the app
 
 The Square number checker app was created as a prototype for the organisation I work for to determine the viability of using the React and Typescript technology for building web applications. The decision to introduce React and Typescript into the organisation's technology stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organisation wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
@@ -26,6 +24,8 @@ The main advantage of TypeScript over JavaScript is that it provides compile-tim
 Author: Elijah Aremu
 
 GitHub Username: @elielijah321
+
+[![codecov](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker/branch/main/graph/badge.svg?token=FkUOknCveH)](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker)
 
 ![APP SCREENSHOT](https://user-images.githubusercontent.com/45821029/232090390-4c833dfd-f85e-426e-99d7-a98875544739.jpeg)
 
