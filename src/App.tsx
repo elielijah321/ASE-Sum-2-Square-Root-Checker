@@ -55,16 +55,19 @@ function App() {
     <>
       <div className='app'>
 
-        <div className='form-container'>
-        <h1 className='text-align' data-testid="heading">Square number checker</h1>
-        <h2 className='text-align' data-testid="sub-heading">{`${resultMessage}`}</h2>
-        <h4 className='text-align' data-testid="description">{`${sqrRootMessage}`}</h4>
+        <div className='app__container'>
+          <div className='app__header'>
+            <h1 data-testid="heading">Square number checker</h1>
+            <h2 data-testid="sub-heading">{`${resultMessage}`}</h2>
+            <h4 data-testid="description">{`${sqrRootMessage}`}</h4>
+          </div>
 
-        <Form data-testid="form" onSubmit={event => handleSubmit(event)}>
+        <Form className='app__form' data-testid="form" onSubmit={event => handleSubmit(event)}>
           <Form.Group className="mb-3" controlId="formNumber" >
             <Form.Control 
               data-testid="input"
               type="text" 
+              className='app__input'
               placeholder="Enter a number" 
               value={input}
               onChange={handleChange}
@@ -76,7 +79,7 @@ function App() {
           </Form.Group>
           <Button 
             variant="primary" 
-            className='submit' 
+            className='app__button' 
             type="submit" 
             data-testid="submit-button"
             disabled={isDisabled}>

@@ -4,8 +4,24 @@ For Northeastern University
 
 [![codecov](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker/branch/main/graph/badge.svg?token=FkUOknCveH)](https://codecov.io/gh/elielijah321/ASE-Sum-2-Square-Root-Checker)
 
+#  Reason for creating the app
 
-# About
+The Square number checker app was created as a prototype for the organisation I work for to determine the viability of using the React and Typescript technology for building web applications. The decision to introduce React and Typescript into the organisation's technology stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organisation wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
+
+The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
+
+## React 
+
+React is a JavaScript library for building user interfaces using reusable components React uses a virtual DOM (Document Object Model) which is a lightweight representation of the actual DOM. When a component's state changes React calculates the minimal set of changes needed to update the virtual DOM and applies them to the actual DOM resulting in faster and more efficient updates.
+
+## Typescript 
+
+TypeScript is a programming language that is a superset of JavaScript meaning it extends and enhances JavaScript with additional features. TypeScript adds features such as static typing, interfaces and classes making it easier to write and maintain large and complex applications.
+
+The main advantage of TypeScript over JavaScript is that it provides compile-time checking of types which helps to catch errors early in the development process before the code is run. This can save developers a lot of time and effort by reducing the number of bugs and errors that need to be fixed later on.
+
+
+# About the app
 
 Author: Elijah Aremu
 
@@ -16,13 +32,15 @@ GitHub Username: @elielijah321
 
 The Square number checker app is a web application built with React and Bootstrap that allows users to input a number and determine if it is a perfect square. The app provides two main functionalities; it checks if the entered number is a square number and calculates the square root of that number. The app has a simple and user-friendly interface that includes an input field for the number to be checked, a submit button to initiate the check and a message section that displays the results of the check.
 
-##  Reason for creating the app
-
-The Square number checker app was created as a prototype for the organisation I work for to determine the viability of using React as a technology for building web applications. The decision to introduce React into the organisation's tech stack was made with the aim of improving the performance and maintainability of their applications. To assess the feasibility of using React, the organisation wanted to develop a small-scale application that would demonstrate the capabilities of the technology.
-
-The Square number checker app was chosen as the prototype because it was relatively simple to build, but still required some complex logic and user interaction. It provided a solid foundation for further exploration and development, and helped to set the stage for future innovation and growth. 
-
 # User Documentation
+
+To use the square number checker app a user should
+* Click this [link](https://zealous-river-0a1c30e03.2.azurestaticapps.net/)
+* Enter a number into the input box 
+* Press the submit button to view the results
+
+
+# Technical Documentation
 
 To run the files for this project npm is necessary, therefore make sure that it has been installed.
 
@@ -68,7 +86,7 @@ Press the 'a' button to runs all tests (excluding End-to-End tests).
 
 Visit [create-react-app/docs/running-tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information on running tests.
 
-### 6. Cypress tests:
+### 6. Run cypress tests:
 
 Ensure that the app is running (See step 4)
 
@@ -84,14 +102,15 @@ Visit [cypress documentation](https://docs.cypress.io/guides/end-to-end-testing/
 
 # Code and Design
 
-## Technical Documentation
 
 ### Technical Stack
 * [HMTL](https://devdocs.io/html/)
 * [CSS](https://devdocs.io/css/)
+* [React](https://devdocs.io/react/)
 * [TypeScript](https://devdocs.io/typescript/)
 * [Jest](https://jestjs.io/docs/getting-started)
 * [Cypress](https://devdocs.io/cypress/)
+* [Azure](https://azure.microsoft.com/en-gb/get-started/#explore-azure)
 
 ### Files used to run the app
 
@@ -118,6 +137,13 @@ Visit [cypress documentation](https://docs.cypress.io/guides/end-to-end-testing/
 I have made sure that the code is easy to read and comprehend by following the correct naming and coding conventions. I used camelCase and code indentation throughout the codebase to achieve this. Comments were used to allow other who have not worked on the project to understand what is being done.
 
 ![F1A9B9AE-A631-4C7B-92DE-BCBB1F00E71A](https://user-images.githubusercontent.com/45821029/232496332-90aae2d6-fa67-4e07-a947-dd92222722fb.jpeg)
+
+
+The CSS BEM (Block, Element, Modifier) naming strategy is a way to name CSS classes that follows a modular and consistent structure. It helps to create reusable code and makes it easier to maintain and scale large CSS codebases. 
+
+In BEM each CSS class is made up of three parts: the block, the element and the modifier, separated by double underscores (__) and double hyphens (--)
+
+![BEM naming stratergy](https://user-images.githubusercontent.com/45821029/233633668-c80306d2-291b-4af0-891f-51d8f826d72b.jpeg)
 
 # Figma designs
 
@@ -178,6 +204,7 @@ Gitflow defines a clear set of branching rules and conventions that dictate how 
 Gitflow also defines a set of supporting branches, including feature branches for developing new features, release branches for preparing software releases and hotfix branches for addressing critical bugs or issues in production environments.
 
 To ensure clarity on which branch corresponded to which ticket, I made a point of incorporating the ID of the user story in the branch name.
+The naming convention of the branch goes as follows "feauture/[TicketID]-[description-of-ticket]"
 
 
 # Testing
@@ -228,7 +255,7 @@ By using Continuous Integration tests we can ensure that changes to the codebase
 
 # Deployment process
 
-During the development of the app, I implemented continuous integration and continuous deployment pipeline which build, test and deploy the code when a pull request is opened on the repository
+During the development of the app, I implemented continuous integration and continuous deployment pipeline which will build, test and deploy the code to Azure when a pull request is opened on the repository
 
 * [Live Version](https://zealous-river-0a1c30e03.2.azurestaticapps.net/)
 * [Develop Version](https://happy-ground-09b048e03.3.azurestaticapps.net/)
